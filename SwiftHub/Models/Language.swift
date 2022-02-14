@@ -7,12 +7,14 @@
 
 import Foundation
 
+typealias LanguageColor = [String: String]
+
 enum Language: String, CaseIterable {
     case swift
     case kotlin
-    case java    
+    case java
     case objc = "obj-c"
-
+    
     init?(name: String?) {
         guard let name = name else {
             return nil

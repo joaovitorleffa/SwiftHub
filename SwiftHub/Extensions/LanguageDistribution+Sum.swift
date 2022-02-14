@@ -8,11 +8,11 @@
 import Foundation
 import SwiftUI
 
-typealias LanguageDistribution = [String: CGFloat]
-typealias LanguageRatio = [String: CGFloat]
+typealias LanguageDistribution = [String: Double]
+typealias LanguageRatio = [String: Double]
 
 extension LanguageDistribution {
-    var lineCount: CGFloat {
+    var lineCount: Double {
         self.reduce(0) { $0 + $1.value }
     }
     

@@ -11,6 +11,8 @@ extension Color {
     static let mainPurple = Color("mainPurple")
     static let discretGray = Color("discretGray")
     static let description = Color("description")
+    static let closedRed = Color("closedRed")
+    static let openGreen = Color("openGreen")
 }
 
 extension UIColor {

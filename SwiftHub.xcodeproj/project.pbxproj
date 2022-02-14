@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B4AA8BC27BA8E65004D327E /* Double+Percentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4AA8BB27BA8E65004D327E /* Double+Percentage.swift */; };
+		2B4AA8BE27BA9011004D327E /* Double+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4AA8BD27BA9011004D327E /* Double+Format.swift */; };
 		2B7393D327B6812500B3CD08 /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7393D227B6812500B3CD08 /* UserDetailsView.swift */; };
 		2B7393D527B6813300B3CD08 /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7393D427B6813300B3CD08 /* UserDetailsViewModel.swift */; };
 		2B7393D727B684D500B3CD08 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7393D627B684D500B3CD08 /* RoundedImage.swift */; };
@@ -21,6 +23,7 @@
 		2B7393EB27B6E67300B3CD08 /* LanguageUsageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7393EA27B6E67300B3CD08 /* LanguageUsageIndicator.swift */; };
 		2B7393ED27B6E6D400B3CD08 /* RepositoryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7393EC27B6E6D400B3CD08 /* RepositoryDetailsViewModel.swift */; };
 		2B7393EF27B6F27F00B3CD08 /* LanguageDistribution+Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7393EE27B6F27F00B3CD08 /* LanguageDistribution+Sum.swift */; };
+		2B7393F127B7037200B3CD08 /* Color+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7393F027B7037200B3CD08 /* Color+Random.swift */; };
 		2BF92DC627B5447700B6C7BC /* SwiftHubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF92DC527B5447700B6C7BC /* SwiftHubApp.swift */; };
 		2BF92DCA27B5447900B6C7BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BF92DC927B5447900B6C7BC /* Assets.xcassets */; };
 		2BF92DCD27B5447900B6C7BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BF92DCC27B5447900B6C7BC /* Preview Assets.xcassets */; };
@@ -62,6 +65,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B4AA8BB27BA8E65004D327E /* Double+Percentage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Percentage.swift"; sourceTree = "<group>"; };
+		2B4AA8BD27BA9011004D327E /* Double+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Format.swift"; sourceTree = "<group>"; };
 		2B7393D227B6812500B3CD08 /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
 		2B7393D427B6813300B3CD08 /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
 		2B7393D627B684D500B3CD08 /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
@@ -76,6 +81,7 @@
 		2B7393EA27B6E67300B3CD08 /* LanguageUsageIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageUsageIndicator.swift; sourceTree = "<group>"; };
 		2B7393EC27B6E6D400B3CD08 /* RepositoryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewModel.swift; sourceTree = "<group>"; };
 		2B7393EE27B6F27F00B3CD08 /* LanguageDistribution+Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LanguageDistribution+Sum.swift"; sourceTree = "<group>"; };
+		2B7393F027B7037200B3CD08 /* Color+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Random.swift"; sourceTree = "<group>"; };
 		2BF92DC227B5447700B6C7BC /* SwiftHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BF92DC527B5447700B6C7BC /* SwiftHubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftHubApp.swift; sourceTree = "<group>"; };
 		2BF92DC927B5447900B6C7BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -255,9 +261,12 @@
 			isa = PBXGroup;
 			children = (
 				2BF92E0327B55AB400B6C7BC /* UIColor+Palette.swift */,
+				2B7393F027B7037200B3CD08 /* Color+Random.swift */,
 				2BF92E1227B5889E00B6C7BC /* View+NavigationBarAppearance.swift */,
 				2B7393DF27B69D0C00B3CD08 /* Date+Format.swift */,
 				2B7393EE27B6F27F00B3CD08 /* LanguageDistribution+Sum.swift */,
+				2B4AA8BB27BA8E65004D327E /* Double+Percentage.swift */,
+				2B4AA8BD27BA9011004D327E /* Double+Format.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -418,6 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B4AA8BC27BA8E65004D327E /* Double+Percentage.swift in Sources */,
 				2B7393D327B6812500B3CD08 /* UserDetailsView.swift in Sources */,
 				2BF92DF527B54B4A00B6C7BC /* URLProviders.swift in Sources */,
 				2BF92E1127B57A0900B6C7BC /* RepositoryListViewModel.swift in Sources */,
@@ -428,6 +438,7 @@
 				2BF92DC627B5447700B6C7BC /* SwiftHubApp.swift in Sources */,
 				2BF92E1527B58FB000B6C7BC /* LanguagePillView.swift in Sources */,
 				2BF92E1727B5908100B6C7BC /* Language.swift in Sources */,
+				2B7393F127B7037200B3CD08 /* Color+Random.swift in Sources */,
 				2B7393D527B6813300B3CD08 /* UserDetailsViewModel.swift in Sources */,
 				2BF92DFE27B5500500B6C7BC /* User.swift in Sources */,
 				2B7393DE27B6973F00B3CD08 /* RepositoryDetailsView.swift in Sources */,
@@ -445,6 +456,7 @@
 				2BF92E1327B5889E00B6C7BC /* View+NavigationBarAppearance.swift in Sources */,
 				2B7393D927B6910600B3CD08 /* TextLinkView.swift in Sources */,
 				2BF92DF127B5458E00B6C7BC /* Requester.swift in Sources */,
+				2B4AA8BE27BA9011004D327E /* Double+Format.swift in Sources */,
 				2B7393EF27B6F27F00B3CD08 /* LanguageDistribution+Sum.swift in Sources */,
 				2B7393EB27B6E67300B3CD08 /* LanguageUsageIndicator.swift in Sources */,
 			);

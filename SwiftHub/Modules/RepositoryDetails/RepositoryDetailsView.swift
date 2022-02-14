@@ -20,14 +20,16 @@ struct RepositoryDetailsView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            if let language = language {
-                PillView(language: language, isSelected: true)
-            } else {
-                Text(repository.language ?? "Not found language.")
-                    .font(.title3)
-                    .fontWeight(.semibold)
-                    .foregroundColor(.mainPurple)
-            }
+//            if let language = language {
+//                PillView(language: language, isSelected: true)
+//            } else {
+//                Text(repository.language ?? "Not found language.")
+//                    .font(.title3)
+//                    .fontWeight(.semibold)
+//                    .foregroundColor(.mainPurple)
+//            }
+            
+            LanguageUsageIndicator(languageRatio: viewModel.languageDistribution)
             
             Spacer().frame(height: 20)
             
