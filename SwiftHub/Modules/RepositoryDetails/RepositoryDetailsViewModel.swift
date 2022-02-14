@@ -11,7 +11,7 @@ import SwiftUI
 
 class RepositoryDetailsViewModel: ObservableObject {
     @Published var languageDistribution: LanguageDistribution = [:]
-    @Published var languageRatio: LanguageRatio = [:]
+    @Published var languageRatio: LanguageDistribution = [:]
     
     let repository: Repository
     var subscriptions: Set<AnyCancellable> = []

@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct LanguageUsageIndicator: View {
-    let languageRatio: LanguageRatio
-   
-    private let colors = [Color.mainPurple, Color.openGreen, Color.closedRed]
-    private let width = 350.0
+    let languageRatio: LanguageDistribution
     
-    init(languageRatio: LanguageRatio) {
-        let sorted = languageRatio.sorted(by: >)
+    private let colors = [Color.mainPurple, Color.openGreen, Color.closedRed]
+    private let width = 300.0
+    
+    private var columns = [
+        GridItem(.adaptive(minimum: 100), alignment: .leading),
+        GridItem(.adaptive(minimum: 100), alignment: .leading),
+    ]
+    
+    init(languageRatio: LanguageDistribution) {
+        let sorted = languageRatio.sorted { $0.value > $1.value }
         let mostUsed = sorted[0..<(sorted.count > 3 ? 3 : sorted.count)]
         
         self.languageRatio = Dictionary(uniqueKeysWithValues: mostUsed.map {
@@ -34,7 +39,7 @@ struct LanguageUsageIndicator: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack(spacing: 0) {
-                ForEach(languageRatio.sorted(by: >), id: \.key) { key, value in
+                ForEach(languageRatio.sorted { $0.value > $1.value }, id: \.key) { key, value in
                     VStack {}
                     .frame(width: CGFloat(value.percentage * (self.width / 100)), height: 10)
                     .background(valueColors[key])
@@ -42,14 +47,15 @@ struct LanguageUsageIndicator: View {
             }
             .cornerRadius(10)
             
-            HStack() {
-                ForEach(languageRatio.sorted(by: >), id: \.key) { key, value in
+            
+            LazyVGrid(columns: columns, alignment: .leading, spacing: 10) {
+                ForEach(languageRatio.sorted { $0.value > $1.value }, id: \.key) { key, value in
                     HStack {
                         Text("\(value.percentage.format(precision: 2))%")
                             .font(.subheadline)
                             .foregroundColor(valueColors[key])
                             .minimumScaleFactor(0.5)
-                            
+                        
                         Text(key)
                             .font(.subheadline)
                             .foregroundColor(.description)
@@ -57,6 +63,7 @@ struct LanguageUsageIndicator: View {
                     }
                 }
             }
+            
         }
         .frame(width: CGFloat(width))
     }
