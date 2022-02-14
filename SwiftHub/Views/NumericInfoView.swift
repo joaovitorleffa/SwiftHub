@@ -16,6 +16,7 @@ struct NumericInfoView: View {
             Text("\(value)")
                 .font(.title3)
                 .fontWeight(.semibold)
+                .foregroundColor(.black)
             Text(title)
                 .font(.footnote)
                 .foregroundColor(.discretGray)

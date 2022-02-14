@@ -23,7 +23,6 @@ struct Requester {
             completion(.failure(.malformedURL))
             return
         }
-        
         URLSession.shared.dataTask(with: url) { result in
             switch result {
             case .success(let (response, data)):

@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		2B4AA8BC27BA8E65004D327E /* Double+Percentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4AA8BB27BA8E65004D327E /* Double+Percentage.swift */; };
 		2B4AA8BE27BA9011004D327E /* Double+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4AA8BD27BA9011004D327E /* Double+Format.swift */; };
+		2B4AA8C127BA9485004D327E /* IssueListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4AA8C027BA9485004D327E /* IssueListView.swift */; };
+		2B4AA8C327BA97A7004D327E /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4AA8C227BA97A7004D327E /* Issue.swift */; };
+		2B4AA8C527BA9996004D327E /* IssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4AA8C427BA9996004D327E /* IssueView.swift */; };
+		2B4AA8C727BA9DED004D327E /* IssueListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4AA8C627BA9DED004D327E /* IssueListViewModel.swift */; };
+		2B4AA8CA27BAA41D004D327E /* IssueDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4AA8C927BAA41D004D327E /* IssueDetailsView.swift */; };
+		2B4AA8CC27BAB557004D327E /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4AA8CB27BAB557004D327E /* WebView.swift */; };
 		2B7393D327B6812500B3CD08 /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7393D227B6812500B3CD08 /* UserDetailsView.swift */; };
 		2B7393D527B6813300B3CD08 /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7393D427B6813300B3CD08 /* UserDetailsViewModel.swift */; };
 		2B7393D727B684D500B3CD08 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7393D627B684D500B3CD08 /* RoundedImage.swift */; };
@@ -67,6 +73,12 @@
 /* Begin PBXFileReference section */
 		2B4AA8BB27BA8E65004D327E /* Double+Percentage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Percentage.swift"; sourceTree = "<group>"; };
 		2B4AA8BD27BA9011004D327E /* Double+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Format.swift"; sourceTree = "<group>"; };
+		2B4AA8C027BA9485004D327E /* IssueListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueListView.swift; sourceTree = "<group>"; };
+		2B4AA8C227BA97A7004D327E /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
+		2B4AA8C427BA9996004D327E /* IssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueView.swift; sourceTree = "<group>"; };
+		2B4AA8C627BA9DED004D327E /* IssueListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueListViewModel.swift; sourceTree = "<group>"; };
+		2B4AA8C927BAA41D004D327E /* IssueDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueDetailsView.swift; sourceTree = "<group>"; };
+		2B4AA8CB27BAB557004D327E /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		2B7393D227B6812500B3CD08 /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
 		2B7393D427B6813300B3CD08 /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
 		2B7393D627B684D500B3CD08 /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
@@ -133,6 +145,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B4AA8BF27BA9474004D327E /* IssueList */ = {
+			isa = PBXGroup;
+			children = (
+				2B4AA8C027BA9485004D327E /* IssueListView.swift */,
+				2B4AA8C627BA9DED004D327E /* IssueListViewModel.swift */,
+			);
+			path = IssueList;
+			sourceTree = "<group>";
+		};
+		2B4AA8C827BAA3F6004D327E /* IssueDetails */ = {
+			isa = PBXGroup;
+			children = (
+				2B4AA8C927BAA41D004D327E /* IssueDetailsView.swift */,
+			);
+			path = IssueDetails;
+			sourceTree = "<group>";
+		};
 		2B7393D127B6811200B3CD08 /* UserDetails */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +268,7 @@
 				2BF92DFB27B54FE000B6C7BC /* SearchResults.swift */,
 				2BF92DFD27B5500500B6C7BC /* User.swift */,
 				2BF92E1627B5908100B6C7BC /* Language.swift */,
+				2B4AA8C227BA97A7004D327E /* Issue.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -253,6 +283,8 @@
 				2B7393DA27B694F500B3CD08 /* NumericInfoView.swift */,
 				2B7393E627B6C1C600B3CD08 /* SearchBarView.swift */,
 				2B7393EA27B6E67300B3CD08 /* LanguageUsageIndicator.swift */,
+				2B4AA8C427BA9996004D327E /* IssueView.swift */,
+				2B4AA8CB27BAB557004D327E /* WebView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -274,9 +306,11 @@
 		2BF92E0C27B5799800B6C7BC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				2B7393E127B6AF0E00B3CD08 /* RepositorySearch */,
+				2B4AA8BF27BA9474004D327E /* IssueList */,
+				2B4AA8C827BAA3F6004D327E /* IssueDetails */,
 				2BF92E0D27B579B200B6C7BC /* RepositoryList */,
 				2B7393DC27B6972A00B3CD08 /* RepositoryDetails */,
+				2B7393E127B6AF0E00B3CD08 /* RepositorySearch */,
 				2B7393D127B6811200B3CD08 /* UserDetails */,
 			);
 			path = Modules;
@@ -430,14 +464,17 @@
 				2B4AA8BC27BA8E65004D327E /* Double+Percentage.swift in Sources */,
 				2B7393D327B6812500B3CD08 /* UserDetailsView.swift in Sources */,
 				2BF92DF527B54B4A00B6C7BC /* URLProviders.swift in Sources */,
+				2B4AA8CA27BAA41D004D327E /* IssueDetailsView.swift in Sources */,
 				2BF92E1127B57A0900B6C7BC /* RepositoryListViewModel.swift in Sources */,
 				2B7393D727B684D500B3CD08 /* RoundedImage.swift in Sources */,
 				2BF92DF827B54F8600B6C7BC /* MockedData.swift in Sources */,
 				2B7393E727B6C1C600B3CD08 /* SearchBarView.swift in Sources */,
 				2BF92DFA27B54FB900B6C7BC /* Repository.swift in Sources */,
+				2B4AA8C727BA9DED004D327E /* IssueListViewModel.swift in Sources */,
 				2BF92DC627B5447700B6C7BC /* SwiftHubApp.swift in Sources */,
 				2BF92E1527B58FB000B6C7BC /* LanguagePillView.swift in Sources */,
 				2BF92E1727B5908100B6C7BC /* Language.swift in Sources */,
+				2B4AA8CC27BAB557004D327E /* WebView.swift in Sources */,
 				2B7393F127B7037200B3CD08 /* Color+Random.swift in Sources */,
 				2B7393D527B6813300B3CD08 /* UserDetailsViewModel.swift in Sources */,
 				2BF92DFE27B5500500B6C7BC /* User.swift in Sources */,
@@ -446,14 +483,17 @@
 				2B7393ED27B6E6D400B3CD08 /* RepositoryDetailsViewModel.swift in Sources */,
 				2B7393E327B6AF2200B3CD08 /* RepositorySearchViewModel.swift in Sources */,
 				2B7393E527B6AF6D00B3CD08 /* RepositorySearchView.swift in Sources */,
+				2B4AA8C327BA97A7004D327E /* Issue.swift in Sources */,
 				2BF92DF327B545C500B6C7BC /* APISupport.swift in Sources */,
 				2BF92DFC27B54FE000B6C7BC /* SearchResults.swift in Sources */,
+				2B4AA8C527BA9996004D327E /* IssueView.swift in Sources */,
 				2B7393DB27B694F500B3CD08 /* NumericInfoView.swift in Sources */,
 				2BF92E0127B5551700B6C7BC /* RepositoryView.swift in Sources */,
 				2B7393E927B6CF2800B3CD08 /* CombineRequester.swift in Sources */,
 				2BF92E0427B55AB400B6C7BC /* UIColor+Palette.swift in Sources */,
 				2B7393E027B69D0C00B3CD08 /* Date+Format.swift in Sources */,
 				2BF92E1327B5889E00B6C7BC /* View+NavigationBarAppearance.swift in Sources */,
+				2B4AA8C127BA9485004D327E /* IssueListView.swift in Sources */,
 				2B7393D927B6910600B3CD08 /* TextLinkView.swift in Sources */,
 				2BF92DF127B5458E00B6C7BC /* Requester.swift in Sources */,
 				2B4AA8BE27BA9011004D327E /* Double+Format.swift in Sources */,

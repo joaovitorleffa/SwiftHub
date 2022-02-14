@@ -16,6 +16,7 @@ struct Repository: Decodable, Identifiable {
     let language: String?
     let webPage: String?
     let languagesUrl: String
+    let issuesUrl: String
     let watchers: Int
     let openIssues: Int
     let forks: Int
@@ -38,6 +39,7 @@ struct Repository: Decodable, Identifiable {
         case created = "created_at"
         case lastUpdated = "updated_at"
         case languagesUrl = "languages_url"
+        case issuesUrl = "issues_url"
     }
 
     struct Owner: Decodable {

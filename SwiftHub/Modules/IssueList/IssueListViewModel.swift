@@ -1,19 +1,18 @@
 //
-//  RepositoryDetailsViewModel.swift
+//  IssueListViewModel.swift
 //  SwiftHub
 //
-//  Created by joaovitor on 11/02/22.
+//  Created by joaovitor on 14/02/22.
 //
 
-import Combine
 import Foundation
-import SwiftUI
+import Combine
 
-class RepositoryDetailsViewModel: ObservableObject {
-    @Published var languageDistribution: LanguageDistribution = [:]
-    @Published var languageRatio: LanguageRatio = [:]
+class IssueListViewModel: ObservableObject {
+    @Published var issues: [Issue] = []
     
     let repository: Repository
+    
     var subscriptions: Set<AnyCancellable> = []
     
     init(repository: Repository) {
@@ -21,7 +20,7 @@ class RepositoryDetailsViewModel: ObservableObject {
     }
     
     func viewAppeared() {
-        CombineRequester.request(with: .init(path: repository.languagesUrl))
+        CombineRequester.request(with: .init(path: repository.issuesUrl.replacingOccurrences(of: "{/number}", with: "")))
             .receive(on: DispatchQueue.main)
             .sink { completion in
                 switch completion {
@@ -29,8 +28,8 @@ class RepositoryDetailsViewModel: ObservableObject {
                 case .failure(let error):
                     print(error)
                 }
-            } receiveValue: { [unowned self] (result: LanguageDistribution) in
-                self.languageDistribution = result.calculateRatio()
+            } receiveValue: { [unowned self] (result: [Issue]) in
+                self.issues = result
             }
             .store(in: &subscriptions)
     }

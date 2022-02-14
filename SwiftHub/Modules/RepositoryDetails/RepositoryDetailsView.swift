@@ -53,7 +53,10 @@ struct RepositoryDetailsView: View {
             HStack {
                 NumericInfoView(title: "whatchers", value: repository.watchers)
                 Spacer()
-                NumericInfoView(title: "open issues", value: repository.openIssues)
+                NavigationLink(destination: IssueListView(repository: repository)) {
+                    NumericInfoView(title: "open issues", value: repository.openIssues)
+                }
+                
                 Spacer()
                 NumericInfoView(title: "forks", value: repository.forks)
             }
